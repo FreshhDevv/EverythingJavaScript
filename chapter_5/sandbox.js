@@ -5,17 +5,21 @@ let user = {
     age: 30,
     email: 'crystal@gmail.com',
     location: 'cameroon',
-    blog: ['why mac and cheese rules', '10 things to make with marmite'],
-    login: function() {
+    blogs: ['why mac and cheese rules', '10 things to make with marmite'],
+    login() {
         console.log('user logged in');
     },
-    logout: function() {
+    logout() {
         console.log('the user logged out');
     }, 
-    logBlogs: function() {
-        
+    logBlogs() {
+        // console.log(this.blogs);
+        console.log('this user has written the following blogs:');
+        this.blogs.forEach(blog =>  {
+            console.log(blog);
+        });
     }
 };
 
-user.login();
-user.logout();
+user.logBlogs();
+console.log(this);
