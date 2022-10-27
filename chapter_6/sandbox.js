@@ -1,21 +1,10 @@
-const para = document.querySelector("p");
-// console.log(para.innerText);
+const link = document.querySelector("a");
 
-// para.innerText = 'ninjas are awesome.';
+console.log(link.getAttribute("href"));
+link.setAttribute("href", "https://www.freshdev.com");
+link.innerText = "Fresh Dev website";
 
-const paras = document.querySelectorAll("p");
-
-// paras.forEach(para => {
-//     console.log(para.innerText);
-//     para.innerText += ' add text';
-// });
-
-const content = document.querySelector(".content");
-// console.log(content.innerHTML);
-// content.innerHTML += '<h2>This is a new content</h2>';
-
-const people = ['mario', 'luigi', 'yoshi'];
-
-people.forEach(person => {
-    content.innerHTML += `<p>${person}</p>`;
-})
+const msg = document.querySelector("p");
+console.log(msg.getAttribute("class"));
+msg.setAttribute("class", "success");
+msg.setAttribute("style", "color: green;");
