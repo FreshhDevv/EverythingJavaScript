@@ -1,17 +1,16 @@
-const article = document.querySelector("article");
+// const button = document.querySelector("button");
 
-// console.log(article.children);
-// console.log(Array.from(article.children));
-
-// Array.from(article.children).forEach(child => {
-//     child.classList.add("article-element");
+// button.addEventListener("click", () => {
+//     console.log('you clicked me');
 // });
 
-const title = document.querySelector("h2");
+const items = document.querySelectorAll("li");
 
-console.log(title.parentElement.parentElement);
-console.log(title.nextElementSibling);
-console.log(title.previousElementSibling);
-
-// chaining
-console.log(title.nextElementSibling.parentElement.children);
+items.forEach(item => {
+    item.addEventListener("click", event => {
+        // console.log('item clicked');
+        // console.log(event);
+        // console.log(event.target);
+        event.target.style.textDecoration = 'line-through';
+    });
+});
