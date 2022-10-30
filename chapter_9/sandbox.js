@@ -14,4 +14,4 @@ const products = [
 
 const promos = products.filter(product => product.price > 20).map(product => `the ${product} is ${product.price / 2} pounds`);
 
-console.log(promos);
+console.log(promos); 
