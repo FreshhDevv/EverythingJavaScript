@@ -23,3 +23,7 @@ span{
 .delete{
     color: #fff;
 }
+
+.filtered{
+    display: none !important;
+}
