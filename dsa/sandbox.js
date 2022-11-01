@@ -21,13 +21,37 @@
 
 // PRIMALITY TEST
 
-const isPrime = (number) => {
-    for(let i = 2; i < Math.sqrt(number); i++) {
-        if(number % i === 0) {
-            return false;
-        }
-    }
-    return true;
+// const isPrime = (number) => {
+//     for(let i = 2; i < Math.sqrt(number); i++) {
+//         if(number % i === 0) {
+//             return false;
+//         }
+//     }
+//     return true;
+// };
+// console.log(isPrime(5));
+// console.log(isPrime(9));
+
+const isEven = (number) => {
+if(number % 2 === 0) {
+return true;
+} else {
+    return false;
 };
-console.log(isPrime(5));
-console.log(isPrime(9));
+};
+
+// console.log(isEven(3));
+
+const getMin = (numbers) => {
+let currentMin = numbers[0];
+    numbers.forEach(function (number) {
+        if(number < currentMin) {
+            currentMin = number;
+        }
+    });
+    return currentMin; 
+};
+
+console.log(getMin([1, 2, 3]));
+console.log(getMin([9, 8, 3, 5, 1]));
+console.log(getMin([10, 3, 8, 6]));
