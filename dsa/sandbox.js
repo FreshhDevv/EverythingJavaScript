@@ -1,11 +1,9 @@
-let sum = 0;
-// let numbers = [1, 5, 3, 5];
 const sumNumbers = (numbers) => {
+    let sum = 0;
     numbers.forEach( function(number) {
         sum += number;
-        console.log(sum);
     });
+    return sum;
 };
+console.log(sumNumbers([1, 5, 3, 5, 5, 5,5]));
 
-// console.log(sumNumbers([1, 4, 5]));
-sumNumbers([1, 5, 3, 5]);
