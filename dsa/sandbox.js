@@ -5,5 +5,5 @@ const sumNumbers = (numbers) => {
     });
     return sum;
 };
-console.log(sumNumbers([1, 5, 3, 5, 5, 5,5]));
+console.log(sumNumbers([1, 5, 3, 5, 9, 7, 5]));
 
