@@ -32,22 +32,43 @@
 // console.log(isPrime(5));
 // console.log(isPrime(9));
 
-const isEven = (number) => {
-    return number % 2 === 0;
-};
+// const isEven = (number) => {
+//     return number % 2 === 0;
+// };
 
-// console.log(isEven(3));
+// // console.log(isEven(3));
 
-const getMin = (numbers) => {
-let currentMin = numbers[0];
-    numbers.forEach(function (number) {
-        if(number < currentMin) {
-            currentMin = number;
+// const getMin = (numbers) => {
+// let currentMin = numbers[0];
+//     numbers.forEach(function (number) {
+//         if(number < currentMin) {
+//             currentMin = number;
+//         }
+//     });
+//     return currentMin; 
+// };
+
+// console.log(getMin([1, 2, 3]));
+// console.log(getMin([9, 8, 3, 5, 1]));
+// console.log(getMin([10, 3, 8, 6]));
+
+// IS A POWER OF TWO
+const isPowerOfTwo = (number) => {
+    if(number < 1) {
+        return false;
+    }
+    let dividedNumber = number;
+    while (dividedNumber !== 1) {
+        if(dividedNumber % 2 !== 0){
+            return false;
         }
-    });
-    return currentMin; 
-};
+        dividedNumber = dividedNumber / 2;
+    }
+    return true;
+}
 
-console.log(getMin([1, 2, 3]));
-console.log(getMin([9, 8, 3, 5, 1]));
-console.log(getMin([10, 3, 8, 6]));
+console.log(isPowerOfTwo(8));
+console.log(isPowerOfTwo(5));
+console.log(isPowerOfTwo(20));
+console.log(isPowerOfTwo(16));
+console.log(isPowerOfTwo(13));
