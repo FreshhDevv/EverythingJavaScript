@@ -1,3 +1,3 @@
 "use strict";
-console.log('Hello World');
+let user = [1, 'mosh'];
 //# sourceMappingURL=index.js.map
