@@ -1,7 +1,8 @@
-// const small = 1;
-// const medium = 2;
-// const large = 3;
+function calculateTax(income: number, taxYear = 2022): number{
+    if(taxYear < 2022) 
+return income * 1.2;
+return income * 3;
+    
+}
 
-const enum size {small = 1, medium, large};
-let mySize = size.medium;
-console.log(mySize);
+calculateTax(10_000);
