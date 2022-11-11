@@ -8,22 +8,22 @@ interface Props {
   handleAdd: (event: React.FormEvent) => void;
 }
 
-const InputField = ({todo, setTodo, handleAdd}: Props) => {
-
+const InputField = ({ todo, setTodo, handleAdd }: Props) => {
   const inputRef = useRef<HTMLInputElement>(null);
 
   return (
-    <form className="input" onSubmit={(event) => {
-      handleAdd(event)
-      inputRef.current?.blur()
-      }}>
+    <form
+      className="input"
+      onSubmit={(event) => {
+        handleAdd(event);
+        inputRef.current?.blur();
+      }}
+    >
       <input
-      ref={inputRef}
+        ref={inputRef}
         type="input"
         value={todo}
-        onChange ={
-            (e) => setTodo(e.target.value)
-        }
+        onChange={(e) => setTodo(e.target.value)}
         placeholder="Enter a task"
         className="input_box"
       ></input>
