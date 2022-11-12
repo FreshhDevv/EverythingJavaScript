@@ -2,6 +2,8 @@ import { type } from '@testing-library/user-event/dist/type';
 import * as React from 'react';
 import { Todo } from '../model';
 import { AiFillEdit, AiFillDelete } from "react-icons/ai";
+import { MdDone } from "react-icons/md";
+import "./styles.css";
 
 type Props = {
   todo: Todo;
@@ -21,7 +23,7 @@ const SingleTodo = ({todo, todos, setTodos}: Props) => {
             <AiFillDelete />
           </span>
           <span className="icon">
-            
+            <MdDone/>
           </span>
         </div>
       </form>
