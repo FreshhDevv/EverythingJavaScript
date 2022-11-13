@@ -7,10 +7,10 @@ import styles from '../styles/Home.module.css'
 
 export default function Home() {
   return (
-    <div>
-      <h1>HomePage</h1>
-      <p>Lorem, ipsum</p>
-      <Link href='/ninjas'>See Ninja Listing</Link>
+    <div className={styles.title}>
+      <h1 className={styles.text}>HomePage</h1>
+      <p className={styles.text}>Lorem, ipsum</p>
+      <Link className={styles.btn} href='/ninjas'>See Ninja Listing</Link>
     </div>
   )
 }
