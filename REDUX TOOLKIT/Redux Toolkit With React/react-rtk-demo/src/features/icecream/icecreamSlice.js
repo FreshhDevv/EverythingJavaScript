@@ -1,7 +1,5 @@
-// const { cakeActions } = require('../cake/cakeSlice');
 import {createSlice} from '@reduxjs/toolkit';
 
-// const createSlice = require('@reduxjs/toolkit').createSlice;
 import {ordered as cakeOrdered} from '../cake/cakeSlice'
 
 const initialState = {

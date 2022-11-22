@@ -12,14 +12,9 @@ import { UserView } from './features/users/UserView'
 function App() {
   return (
     <div className="App">
-     
-
-
-
-        <CakeView />
-        <IcecreamView />
-        <UserView />
- 
+      <CakeView />
+      <IcecreamView />
+      <UserView />
     </div>
   );
 }
